@@ -15,6 +15,8 @@ public class CharacterModel : MonoBehaviour
     private bool _boostAura;
     private bool _boostShoot;
 
+    public bool _isTouchingWall;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +25,8 @@ public class CharacterModel : MonoBehaviour
 
         _boostAura = false;
         _boostShoot = false;
+
+        _isTouchingWall = false;
 
     }
 
@@ -89,6 +93,26 @@ public class CharacterModel : MonoBehaviour
                 _lastHit = 3f;
 
             }
+        }
+        else if (other.tag == "Wall")
+        {
+            _isTouchingWall = true;
+        }
+
+
+        
+
+        if (other.tag == "Edge")
+        {
+            if(_isTouchingWall)
+            {
+                _life = 0;
+            }
+
+        }
+        else if (other.tag != "Wall")
+        {
+            _isTouchingWall = false;
         }
 
 

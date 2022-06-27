@@ -6,6 +6,12 @@ using UnityEngine.InputSystem;
 public class GameController : MonoBehaviour
 {
     PlayerControls controls;
+
+
+    //[SerializeField] TimerView _secondView;
+    //[SerializeField] TimerView _minuteView;
+
+
     [SerializeField] CharacterMovement characterMovement;
     [SerializeField] AimMovement characterAim;
 
@@ -23,12 +29,20 @@ public class GameController : MonoBehaviour
 
     private int nbShootBoost;
 
+    //private TimerModel _timerModel;
+
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        /*
+        _timerModel.GetSecond().Subscribe(_secondView);
+        _timerModel.GetMinute().Subscribe(_minuteView);
+        */
+
+
         nbShootBoost = 1;
 
         if(nbBullet == 1)
