@@ -35,7 +35,7 @@ public class CharacterModel : MonoBehaviour
     {
         _lastHit -= Time.deltaTime;
 
-
+        Debug.Log(_isTouchingWall);
 
     }
 
@@ -98,9 +98,8 @@ public class CharacterModel : MonoBehaviour
         {
             _isTouchingWall = true;
         }
-
-
         
+
 
         if (other.tag == "Edge")
         {
@@ -110,10 +109,7 @@ public class CharacterModel : MonoBehaviour
             }
 
         }
-        else if (other.tag != "Wall")
-        {
-            _isTouchingWall = false;
-        }
+        
 
 
         if (_life <= 0)
@@ -122,5 +118,13 @@ public class CharacterModel : MonoBehaviour
         }
 
         
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.tag == "Wall")
+        {
+            _isTouchingWall = false;
+        }
     }
 }

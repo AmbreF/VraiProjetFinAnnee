@@ -1,7 +1,22 @@
 fileFormatVersion: 2
 guid: b49d855e5d0640f459dedd51bcbd78bf
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 717768853994939507
+    second: Soldiers_Marche_3.4_Droite_Resize_0
+  - first:
+      213: -1496521831580571414
+    second: Soldiers_Marche_3.4_Droite_Resize_1
+  - first:
+      213: 1206949719015059828
+    second: Soldiers_Marche_3.4_Droite_Resize_2
+  - first:
+      213: 7070346442651372917
+    second: Soldiers_Marche_3.4_Droite_Resize_3
+  - first:
+      213: 5156089367319931646
+    second: Soldiers_Marche_3.4_Droite_Resize_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +90,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Soldiers_Marche_3.4_Droite_Resize_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 81
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 374253548f606f900800000000000000
+      internalID: 717768853994939507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_3.4_Droite_Resize_1
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 1
+        width: 81
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae8e506b2594b3be0800000000000000
+      internalID: -1496521831580571414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_3.4_Droite_Resize_2
+      rect:
+        serializedVersion: 2
+        x: 218
+        y: 0
+        width: 81
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47176afef52ffb010800000000000000
+      internalID: 1206949719015059828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_3.4_Droite_Resize_3
+      rect:
+        serializedVersion: 2
+        x: 327
+        y: 0
+        width: 81
+        height: 123
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57d8e2911aaee1260800000000000000
+      internalID: 7070346442651372917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_3.4_Droite_Resize_4
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 0
+        width: 81
+        height: 124
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efae54126fb1e8740800000000000000
+      internalID: 5156089367319931646
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

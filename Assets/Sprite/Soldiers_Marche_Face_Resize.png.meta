@@ -1,7 +1,25 @@
 fileFormatVersion: 2
 guid: dcf3caf696d823f46a8371b786863380
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -6056415835482988810
+    second: Soldiers_Marche_Face_Resize_0
+  - first:
+      213: 9008580823712646722
+    second: Soldiers_Marche_Face_Resize_1
+  - first:
+      213: -2009626289687380047
+    second: Soldiers_Marche_Face_Resize_2
+  - first:
+      213: -3341640306391020248
+    second: Soldiers_Marche_Face_Resize_3
+  - first:
+      213: -6905438755134436853
+    second: Soldiers_Marche_Face_Resize_4
+  - first:
+      213: 3318632604000024346
+    second: Soldiers_Marche_Face_Resize_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +59,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +93,126 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Soldiers_Marche_Face_Resize_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 103.4
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe5cf9c2e943fba0800000000000000
+      internalID: -6056415835482988810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_Face_Resize_1
+      rect:
+        serializedVersion: 2
+        x: 103
+        y: 0
+        width: 103.4
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246c9c79788e40d70800000000000000
+      internalID: 9008580823712646722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_Face_Resize_2
+      rect:
+        serializedVersion: 2
+        x: 206
+        y: 0
+        width: 104
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bfb5e7798f5c14e0800000000000000
+      internalID: -2009626289687380047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_Face_Resize_3
+      rect:
+        serializedVersion: 2
+        x: 310
+        y: 0
+        width: 103
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82d8f6a98db10a1d0800000000000000
+      internalID: -3341640306391020248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Soldiers_Marche_Face_Resize_4
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 0
+        width: 103
+        height: 132
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0a0ffde904fa20a0800000000000000
+      internalID: -6905438755134436853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

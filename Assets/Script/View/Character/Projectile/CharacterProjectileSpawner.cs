@@ -10,7 +10,7 @@ public class CharacterProjectileSpawner : MonoBehaviour
     [SerializeField] private bool _isEnabled;
     private bool _isShooting;
 
-    private float _waitingTime;
+    [SerializeField]private float _waitingTime;
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +18,6 @@ public class CharacterProjectileSpawner : MonoBehaviour
         projectilePooler = ProjectilePooler.Instance;
         _lastShoot = 0f;
 
-        _waitingTime = 0.4f;
 
         _isShooting = false;
 

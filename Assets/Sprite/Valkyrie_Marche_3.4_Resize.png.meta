@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 310dbf328df35984c86f8efe6e251f55
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3560520038664092106
+    second: Valkyrie_Marche_3.4_Resize_0
+  - first:
+      213: 6329671070227585431
+    second: Valkyrie_Marche_3.4_Resize_1
+  - first:
+      213: -3723449116215452350
+    second: Valkyrie_Marche_3.4_Resize_2
+  - first:
+      213: 7860236998109127883
+    second: Valkyrie_Marche_3.4_Resize_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +53,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +87,105 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Valkyrie_Marche_3.4_Resize_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 59
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac9bb385c12896130800000000000000
+      internalID: 3560520038664092106
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Valkyrie_Marche_3.4_Resize_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 1
+        width: 60
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7995bf56d4287d750800000000000000
+      internalID: 6329671070227585431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Valkyrie_Marche_3.4_Resize_2
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 2
+        width: 60
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d5cb8a1c6a35cc0800000000000000
+      internalID: -3723449116215452350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Valkyrie_Marche_3.4_Resize_3
+      rect:
+        serializedVersion: 2
+        x: 201
+        y: 0
+        width: 56
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc46daa87eb251d60800000000000000
+      internalID: 7860236998109127883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

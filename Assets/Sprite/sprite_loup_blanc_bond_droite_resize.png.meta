@@ -1,7 +1,19 @@
 fileFormatVersion: 2
 guid: 407a39996fb239b45aead6d731de6238
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: -2084467386101470962
+    second: sprite_loup_blanc_bond_droite_resize_0
+  - first:
+      213: 8665819612320535706
+    second: sprite_loup_blanc_bond_droite_resize_1
+  - first:
+      213: 9048365926456203012
+    second: sprite_loup_blanc_bond_droite_resize_2
+  - first:
+      213: 8903817815786411637
+    second: sprite_loup_blanc_bond_droite_resize_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +53,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -75,9 +87,105 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: sprite_loup_blanc_bond_droite_resize_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 33
+        width: 265
+        height: 153
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09e881d4fb7213e0800000000000000
+      internalID: -2084467386101470962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_loup_blanc_bond_droite_resize_1
+      rect:
+        serializedVersion: 2
+        x: 282
+        y: 66
+        width: 260
+        height: 162
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a949aff160d234870800000000000000
+      internalID: 8665819612320535706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_loup_blanc_bond_droite_resize_2
+      rect:
+        serializedVersion: 2
+        x: 568
+        y: 20
+        width: 213
+        height: 178
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4079b2caed0429d70800000000000000
+      internalID: 9048365926456203012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sprite_loup_blanc_bond_droite_resize_3
+      rect:
+        serializedVersion: 2
+        x: 798
+        y: 20
+        width: 231
+        height: 167
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5765eb60127b09b70800000000000000
+      internalID: 8903817815786411637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []

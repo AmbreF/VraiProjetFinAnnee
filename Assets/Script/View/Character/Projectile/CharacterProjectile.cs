@@ -11,6 +11,8 @@ public class CharacterProjectile : MonoBehaviour,IPooledProjectile
 
     private Vector3 _characterAim;
 
+    private float _rotationZ;
+
 
 
 
@@ -37,6 +39,7 @@ public class CharacterProjectile : MonoBehaviour,IPooledProjectile
     public void SetCharacterAim(Vector3 aim)
     {
         _characterAim = aim;
+
 
     }
 

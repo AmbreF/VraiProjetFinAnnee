@@ -15,10 +15,6 @@ public class CharacterMovement : MonoBehaviour
 
     }
 
-    /*
-        _animator.SetBool("Idle", false);
-        _animator.SetBool("Walking", true);
-     */
 
     // Update is called once per frame
     void Update()
