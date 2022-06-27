@@ -137,6 +137,10 @@ public class GameController : MonoBehaviour
         controls.Gameplay.Shoot.performed += ctx => characterProjectileSpawner2.Shoot();
         controls.Gameplay.Shoot.performed += ctx => characterProjectileSpawner3.Shoot();
 
+        controls.Gameplay.Shoot.canceled += ctx => characterProjectileSpawner.UnShoot();
+        controls.Gameplay.Shoot.canceled += ctx => characterProjectileSpawner2.UnShoot();
+        controls.Gameplay.Shoot.canceled += ctx => characterProjectileSpawner3.UnShoot();
+
         controls.Gameplay.Boost.performed += ctx => aura.UseBoost();
 
         controls.Gameplay.Pause.performed += ctx => pauseGame.Pause();
