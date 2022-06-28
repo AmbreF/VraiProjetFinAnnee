@@ -15,7 +15,7 @@ public class CharacterModel : MonoBehaviour
     private bool _boostAura;
     private bool _boostShoot;
 
-    public bool _isTouchingWall;
+    private bool _isTouchingWall;
 
     // Start is called before the first frame update
     void Start()

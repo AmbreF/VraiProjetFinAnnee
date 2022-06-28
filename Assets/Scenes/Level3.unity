@@ -986,7 +986,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 3
   _thisCharacter: {fileID: 718484040}
-  _isTouchingWall: 0
 --- !u!61 &718484043
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1976,8 +1975,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1148913829}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+<<<<<<< Updated upstream
   m_LocalPosition: {x: -0.03, y: 64.17, z: 0}
   m_LocalScale: {x: 0.48928913, y: 0.48928913, z: 0.48928913}
+=======
+  m_LocalPosition: {x: 0, y: 66, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+>>>>>>> Stashed changes
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
