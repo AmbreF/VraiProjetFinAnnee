@@ -8,8 +8,8 @@ public class GameController : MonoBehaviour
     PlayerControls controls;
 
 
-    [SerializeField] TimerView _secondView;
-    [SerializeField] TimerView _minuteView;
+    [SerializeField] SecondView _secondView;
+    [SerializeField] MinuteView _minuteView;
 
 
     [SerializeField] CharacterMovement characterMovement;

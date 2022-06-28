@@ -639,7 +639,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 131}
+  m_AnchoredPosition: {x: 0, y: 150}
   m_SizeDelta: {x: 400, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &634529517
@@ -1236,7 +1236,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_text
-      value: Back To Menu
+      value: Menu
       objectReference: {fileID: 0}
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_fontAsset
@@ -1416,7 +1416,7 @@ GameObject:
   - component: {fileID: 1161100602}
   - component: {fileID: 1161100601}
   m_Layer: 5
-  m_Name: "D\xE9faite"
+  m_Name: Defeat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1438,8 +1438,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -22.24022}
-  m_SizeDelta: {x: 561, y: 360.0804}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 850, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1161100601
 MonoBehaviour:
@@ -1576,7 +1576,7 @@ MonoBehaviour:
     m_Top: 0
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: -172
+  m_Spacing: -250
   m_ChildForceExpandWidth: 1
   m_ChildForceExpandHeight: 1
   m_ChildControlWidth: 0

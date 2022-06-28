@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -31,7 +32,10 @@ public class CharacterProjectile : MonoBehaviour,IPooledProjectile
     // Update is called once per frame
     void Update()
     {
-        transform.Translate(_characterAim.normalized  * (_speed + _cameraSpeed) * Time.deltaTime);
+        transform.Translate(Vector3.up * (_speed + _cameraSpeed) * Time.deltaTime);
+
+
+        transform.eulerAngles = new Vector3(0, 0, _rotationZ);
     }
 
 
@@ -39,6 +43,8 @@ public class CharacterProjectile : MonoBehaviour,IPooledProjectile
     public void SetCharacterAim(Vector3 aim)
     {
         _characterAim = aim;
+
+        _rotationZ = (float)(Math.Atan2(aim.y, aim.x)/Math.PI*180)-90;
 
 
     }

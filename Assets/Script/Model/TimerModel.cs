@@ -8,12 +8,12 @@ using TMPro;
 
 public class TimerModel : MonoBehaviour
 {
-    private IntObservable  _secondTime;
+    private FloatObservable _secondTime;
     private IntObservable _minuteTime;
 
     public TimerModel(int second, int minute)
     {
-        _secondTime = new IntObservable(second);
+        _secondTime = new FloatObservable(second);
         _minuteTime = new IntObservable(minute);
     }
 
@@ -36,14 +36,14 @@ public class TimerModel : MonoBehaviour
         return _minuteTime; 
     }
 
-    public IntObservable GetSecond()
+    public FloatObservable GetSecond()
     { 
         return _secondTime; 
     }
 
     public void ChangeTimer()
     {
-        _secondTime.Add(-(1 * (int)Time.deltaTime));
+        _secondTime.Add(-(1 * Time.deltaTime));
 
 
         if (_secondTime.GetValue() <= 0 && _minuteTime.GetValue() <= 0)

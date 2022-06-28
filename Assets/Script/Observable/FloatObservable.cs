@@ -4,30 +4,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class IntObservable : IObservable<int>
+public class FloatObservable : IObservable<float>
 {
-    private List<IObserver<int>> _observers;
+    private List<IObserver<float>> _observers;
 
-    private int _value;
+    private float _value;
 
-    public int GetValue()
+    public float GetValue()
     {
         return _value;
     }
 
-    public IntObservable(int initValue)
+    public FloatObservable(float initValue)
     {
         _value = initValue;
 
-        _observers = new List<IObserver<int>>();
+        _observers = new List<IObserver<float>>();
     }
 
 
-    public void Add(int deltaValue)
+    public void Add(float deltaValue)
     {
         _value += deltaValue;
 
-        foreach (IObserver<int> obs in _observers)
+        foreach (IObserver<float> obs in _observers)
         {
             obs.OnNext(_value);
         }
@@ -36,7 +36,7 @@ public class IntObservable : IObservable<int>
 
 
 
-    public IDisposable Subscribe(IObserver<int> observer)
+    public IDisposable Subscribe(IObserver<float> observer)
     {
         if (!_observers.Contains(observer))
         {
@@ -46,3 +46,4 @@ public class IntObservable : IObservable<int>
         return null;
     }
 }
+

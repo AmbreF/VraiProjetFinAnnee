@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 
-public class TimerView : MonoBehaviour, IObserver<int>
+public class MinuteView : MonoBehaviour, IObserver<int>
 {
     [SerializeField] private TextMeshProUGUI _time;
     public void OnCompleted()
