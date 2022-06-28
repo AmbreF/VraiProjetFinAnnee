@@ -74,7 +74,6 @@ namespace BezierSolution
 					if( travelMode == TravelMode.Once )
                     {
 						m_normalizedT = 1f;
-						Destroy(_walker);
                     }
 					else if( travelMode == TravelMode.Loop )
 						m_normalizedT -= 1f;
