@@ -35,7 +35,6 @@ public class CharacterModel : MonoBehaviour
     {
         _lastHit -= Time.deltaTime;
 
-        Debug.Log(_isTouchingWall);
 
     }
 
@@ -60,6 +59,21 @@ public class CharacterModel : MonoBehaviour
     {
         _boostShoot = shoot;
     }
+
+
+    public int GetLife()
+    {
+
+        return _life;
+    }
+
+    public void SetLife(int life)
+    {
+        _life = life;
+    }
+
+
+
 
 
     private void OnTriggerEnter2D(Collider2D other)

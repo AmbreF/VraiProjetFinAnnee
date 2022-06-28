@@ -8,8 +8,8 @@ public class GameController : MonoBehaviour
     PlayerControls controls;
 
 
-    //[SerializeField] TimerView _secondView;
-    //[SerializeField] TimerView _minuteView;
+    [SerializeField] TimerView _secondView;
+    [SerializeField] TimerView _minuteView;
 
 
     [SerializeField] CharacterMovement characterMovement;
@@ -18,6 +18,10 @@ public class GameController : MonoBehaviour
     [SerializeField] CharacterProjectileSpawner characterProjectileSpawner;
     [SerializeField] CharacterProjectileSpawner characterProjectileSpawner2;
     [SerializeField] CharacterProjectileSpawner characterProjectileSpawner3;
+
+    //[SerializeField] HeartView heart1;
+    //[SerializeField] HeartView heart2;
+    //[SerializeField] HeartView heart3;
 
 
     [SerializeField] PauseController pauseGame;
@@ -29,7 +33,7 @@ public class GameController : MonoBehaviour
 
     private int nbShootBoost;
 
-    //private TimerModel _timerModel;
+    [SerializeField] TimerModel _timerModel;
 
 
 
@@ -37,10 +41,11 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        /*
+        _timerModel = new TimerModel(0, 3);
+
         _timerModel.GetSecond().Subscribe(_secondView);
         _timerModel.GetMinute().Subscribe(_minuteView);
-        */
+        
 
 
         nbShootBoost = 1;
@@ -65,11 +70,23 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        _timerModel.ChangeTimer();
+
+
         if(character.GetAuraBoost())
         {
             aura.SetAuraBoost(true);
             character.SetAuraBoost(false);
         }
+
+        /*
+        if (character.GetLife())
+        {
+
+        }
+        */
+
 
 
 
