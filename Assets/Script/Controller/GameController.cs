@@ -19,9 +19,9 @@ public class GameController : MonoBehaviour
     [SerializeField] CharacterProjectileSpawner characterProjectileSpawner2;
     [SerializeField] CharacterProjectileSpawner characterProjectileSpawner3;
 
-    //[SerializeField] HeartView heart1;
-    //[SerializeField] HeartView heart2;
-    //[SerializeField] HeartView heart3;
+    [SerializeField] HeartView heart1;
+    [SerializeField] HeartView heart2;
+    [SerializeField] HeartView heart3;
 
 
     [SerializeField] PauseController pauseGame;
@@ -41,6 +41,8 @@ public class GameController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
+
         _timerModel = new TimerModel(0, 3);
 
         _timerModel.GetSecond().Subscribe(_secondView);
@@ -70,6 +72,12 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(character.GetDeath())
+        {
+            characterMovement.SetSpeed(0);
+        }
+
+
 
         _timerModel.ChangeTimer();
 
@@ -80,19 +88,40 @@ public class GameController : MonoBehaviour
             character.SetAuraBoost(false);
         }
 
-        /*
-        if (character.GetLife())
+        if (character.GetLife()==3)
         {
-
+            heart1.HeartSee();
+            heart2.HeartSee();
+            heart3.HeartSee();
         }
-        */
+
+        if (character.GetLife() == 2)
+        {
+            heart1.HeartUnSee();
+            heart2.HeartSee();
+            heart3.HeartSee();
+        }
+
+        if (character.GetLife() == 1)
+        {
+            heart1.HeartUnSee();
+            heart2.HeartUnSee();
+            heart3.HeartSee();
+        }
+
+        if (character.GetLife() == 0)
+        {
+            heart1.HeartUnSee();
+            heart2.HeartUnSee();
+            heart3.HeartUnSee();
+        }
 
 
 
 
 
 
-        if(nbBullet == 1 && character.GetShootBoost())
+        if (nbBullet == 1 && character.GetShootBoost())
         {
 
             character.SetShotBoost(false);

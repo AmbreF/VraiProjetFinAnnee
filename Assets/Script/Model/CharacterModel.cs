@@ -1,12 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class CharacterModel : MonoBehaviour
 {
 
     [SerializeField] private int _life;
-    [SerializeField] private GameObject _thisCharacter;
+    [SerializeField] private Animator _animator;
 
 
     private int _lifeMax;
@@ -16,6 +17,9 @@ public class CharacterModel : MonoBehaviour
     private bool _boostShoot;
 
     private bool _isTouchingWall;
+
+    private bool _isDead;
+
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,7 @@ public class CharacterModel : MonoBehaviour
         _boostShoot = false;
 
         _isTouchingWall = false;
+        _isDead = false;
 
     }
 
@@ -48,6 +53,15 @@ public class CharacterModel : MonoBehaviour
     {
         _boostAura = aura;
     }
+
+
+    public bool GetDeath()
+    {
+
+        return _isDead;
+    }
+
+
 
     public bool GetShootBoost()
     {
@@ -128,7 +142,7 @@ public class CharacterModel : MonoBehaviour
 
         if (_life <= 0)
         {
-            Destroy(_thisCharacter);
+            StartCoroutine(Death());
         }
 
         
@@ -140,5 +154,24 @@ public class CharacterModel : MonoBehaviour
         {
             _isTouchingWall = false;
         }
+    }
+
+    
+
+    public IEnumerator Death()
+    {
+        _isDead = true;
+
+        _animator.SetBool("IsWalkingFront", false);
+        _animator.SetBool("IsDead", true);
+
+        yield return new WaitForSeconds(3);
+
+        LoadDefeat();
+    }
+
+    public void LoadDefeat()
+    {
+        SceneManager.LoadScene("Defeat");
     }
 }

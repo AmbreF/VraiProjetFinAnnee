@@ -7,6 +7,7 @@ public class PauseController : MonoBehaviour
     [SerializeField] GameObject pauseMenuUI;
 
 
+
     public void Pause()
     {
         pauseMenuUI.SetActive(true);

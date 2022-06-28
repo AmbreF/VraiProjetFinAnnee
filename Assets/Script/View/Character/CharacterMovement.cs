@@ -52,4 +52,10 @@ public class CharacterMovement : MonoBehaviour
 
     }
 
+    public void SetSpeed(float speed)
+    {
+        _speed = speed;
+
+    }
+
 }
