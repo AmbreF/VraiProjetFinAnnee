@@ -413,8 +413,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Clic X to Skip
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
-  m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
+  m_sharedMaterial: {fileID: -4058704487460491496, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -688,7 +688,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: You need to survive during 3 minutes, in 3 survival test.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -752,7 +752,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &388552425
@@ -881,7 +881,7 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1015,8 +1015,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: "Hello Hl\xF6kk !"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
-  m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
+  m_sharedMaterial: {fileID: -4058704487460491496, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1715,7 +1715,7 @@ MonoBehaviour:
 
     Good Luck !'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -1779,7 +1779,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &578987570
@@ -1863,8 +1863,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
-  m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
+  m_sharedMaterial: {fileID: -4058704487460491496, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2050,7 +2050,7 @@ PrefabInstance:
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+      objectReference: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -3837,7 +3837,7 @@ MonoBehaviour:
       m_Calls: []
   m_text: If you don't, the Ragnarok will destroy Yggdrasil !
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -3901,7 +3901,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
+  m_hasFontAssetChanged: 1
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
 --- !u!222 &1406170195
@@ -4139,7 +4139,7 @@ PrefabInstance:
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+      objectReference: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -4573,7 +4573,7 @@ PrefabInstance:
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_fontAsset
       value: 
-      objectReference: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+      objectReference: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
     - target: {fileID: 2363492554939522553, guid: 0404a7942ac9b874b901631d3813ca17, type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 1
@@ -4889,8 +4889,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 00
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
-  m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
+  m_sharedMaterial: {fileID: -4058704487460491496, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -5346,8 +5346,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: ':'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
-  m_sharedMaterial: {fileID: 4600042908630126332, guid: 32452e49ff4556a41818cb9e10ed612d, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
+  m_sharedMaterial: {fileID: -4058704487460491496, guid: 183bdc442b458b9479b68f5791b62e30, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
