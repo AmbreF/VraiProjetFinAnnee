@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour
     [SerializeField] SecondView _secondView;
     [SerializeField] MinuteView _minuteView;
 
+    [SerializeField] CameraMovement camera;
+
 
     [SerializeField] CharacterMovement characterMovement;
     [SerializeField] AimMovement characterAim;
@@ -67,7 +69,9 @@ public class GameController : MonoBehaviour
     {
         if(character.GetDeath())
         {
+            camera.SetSpeed(0);
             characterMovement.SetSpeed(0);
+
         }
 
 

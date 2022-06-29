@@ -88,6 +88,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 3
   _thisCharacter: {fileID: 6095292149392889220}
+  _animator: {fileID: 2994816137396918203}
 --- !u!95 &2994816137396918203
 Animator:
   serializedVersion: 3

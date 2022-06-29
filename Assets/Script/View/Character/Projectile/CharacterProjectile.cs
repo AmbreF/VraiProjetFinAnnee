@@ -51,9 +51,15 @@ public class CharacterProjectile : MonoBehaviour,IPooledProjectile
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag != "Heal" && other.tag != "Aura" && other.tag != "ShootBoost" && other.tag != "Wall" && other.tag != "Wave")
+        if (other.tag == "Ennemies" || other.tag == "Wolfes")
+        {
+            FindObjectOfType<AudioManager>().Play("Hit");
+        }
+
+        if (other.tag != "Heal" && other.tag != "Aura" && other.tag != "ShootBoost" && other.tag != "Wall" && other.tag != "Wave" && other.tag != "Player")
         {
             thisObject.SetActive(false);
+
         }
     }
 

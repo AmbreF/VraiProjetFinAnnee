@@ -36,6 +36,8 @@ public class AuraModel : MonoBehaviour
         if (_haveBoost)
         {
 
+            FindObjectOfType<AudioManager>().Play("Aura");
+
             Collider2D[] hitEnnemies = Physics2D.OverlapCircleAll(transform.position, _auraRange, _ennemyLayers);
 
             foreach (Collider2D ennemy in hitEnnemies)

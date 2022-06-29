@@ -13,4 +13,10 @@ public class CameraMovement : MonoBehaviour
     {
         transform.Translate(new Vector3(0f, Time.deltaTime * _speed, 0f) );
     }
+
+
+    public void SetSpeed(float deltaSpeed)
+    {
+        _speed = deltaSpeed;
+    }
 }

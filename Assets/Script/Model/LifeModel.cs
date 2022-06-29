@@ -1,11 +1,15 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LifeModel : MonoBehaviour
 {
     [SerializeField] private int _life;
     [SerializeField] private GameObject _thisCharacter;
+
+    [SerializeField] private Animator _animator;
+
 
     // Start is called before the first frame update
     void Start()
@@ -18,7 +22,14 @@ public class LifeModel : MonoBehaviour
     {
         if (_life <= 0)
         {
-            Destroy(_thisCharacter);
+            if(_thisCharacter.tag == "Ennemies")
+            {
+                StartCoroutine(Death());
+            }else if(_thisCharacter.tag == "Wolves")
+            {
+                LoadVictory();
+            }
+
         }
     }
 
@@ -41,5 +52,24 @@ public class LifeModel : MonoBehaviour
     public int GetLife()
     {
         return _life;
+    }
+
+    public IEnumerator Death()
+    {
+        
+        _animator.SetBool("IsWalkingFront", false);
+        _animator.SetBool("IsDead", true);
+
+        
+
+        yield return new WaitForSeconds(1);
+
+        Destroy(_thisCharacter);
+
+    }
+
+    public void LoadVictory()
+    {
+        SceneManager.LoadScene("Victory");
     }
 }

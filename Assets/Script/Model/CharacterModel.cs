@@ -94,12 +94,15 @@ public class CharacterModel : MonoBehaviour
     {
         if(other.tag == "Aura")
         {
+            FindObjectOfType<AudioManager>().Play("Boost");
+
             _boostAura = true;
 
         }else if(other.tag == "Heal")
         {
+            FindObjectOfType<AudioManager>().Play("Boost");
 
-            if(_life < _lifeMax)
+            if (_life < _lifeMax)
             {
                 _life++;
 
@@ -108,13 +111,17 @@ public class CharacterModel : MonoBehaviour
         }
         else if (other.tag == "ShootBoost")
         {
+            FindObjectOfType<AudioManager>().Play("Boost");
+
             Debug.Log("Shoot");
 
             _boostShoot = true;
         }
-        else if (other.tag == "Ennemies")
+        else if (other.tag == "Ennemies" || other.tag == "Wolfes")
         {
-            if(_lastHit <= 0)
+            FindObjectOfType<AudioManager>().Play("Blessure");
+
+            if (_lastHit <= 0)
             {
                 _life--;
 

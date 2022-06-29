@@ -111,6 +111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _life: 10
   _thisCharacter: {fileID: 2595958034162558966}
+  _animator: {fileID: 6422089713048905161}
 --- !u!95 &6422089713048905161
 Animator:
   serializedVersion: 3
