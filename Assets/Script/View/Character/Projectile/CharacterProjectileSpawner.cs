@@ -7,7 +7,7 @@ public class CharacterProjectileSpawner : MonoBehaviour
     ProjectilePooler projectilePooler;
 
     private float _lastShoot;
-    [SerializeField] private bool _isEnabled;
+    private bool _isEnabled;
     private bool _isShooting;
 
     [SerializeField]private float _waitingTime;

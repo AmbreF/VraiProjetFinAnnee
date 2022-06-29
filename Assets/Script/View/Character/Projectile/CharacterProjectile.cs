@@ -51,7 +51,7 @@ public class CharacterProjectile : MonoBehaviour,IPooledProjectile
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag != "Heal" && other.tag != "Aura" && other.tag != "ShootBoost" && other.tag != "Wall")
+        if (other.tag != "Heal" && other.tag != "Aura" && other.tag != "ShootBoost" && other.tag != "Wall" && other.tag != "Wave")
         {
             thisObject.SetActive(false);
         }

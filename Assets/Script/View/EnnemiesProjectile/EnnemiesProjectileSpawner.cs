@@ -20,8 +20,10 @@ public class EnnemiesProjectileSpawner : MonoBehaviour
 
         if (_lastShoot <= 0)
         {
-            Instantiate(_projectile, transform.position, transform.rotation);
-            _lastShoot = 0.6f;
+            Instantiate(_projectile, transform.position, Quaternion.identity);
+            _lastShoot = 1f;
         }
     }
+
+
 }

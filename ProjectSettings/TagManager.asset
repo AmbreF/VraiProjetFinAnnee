@@ -11,6 +11,7 @@ TagManager:
   - Ennemies
   - Tir
   - Edge
+  - Wave
   layers:
   - Default
   - TransparentFX

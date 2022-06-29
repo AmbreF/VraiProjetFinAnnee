@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class TimerModel : MonoBehaviour
@@ -48,17 +49,23 @@ public class TimerModel : MonoBehaviour
 
         if (_secondTime.GetValue() <= 0 && _minuteTime.GetValue() <= 0)
         {
-            Debug.Log("victoire");
+            LoadVictory();
         }
 
         if (_secondTime.GetValue() <= 0)
         {
             _minuteTime.Add(-1);
-            _secondTime.Add(59);
+            
+            _secondTime.Add(60);
         }
 
 
 
+    }
+
+    public void LoadVictory()
+    {
+        SceneManager.LoadScene("Victory");
     }
 
 }

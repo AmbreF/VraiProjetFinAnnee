@@ -109,7 +109,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3fdbc70f295604aaeb166734d7eca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 6
+  _life: 10
   _thisCharacter: {fileID: 2595958034162558966}
 --- !u!95 &6422089713048905161
 Animator:

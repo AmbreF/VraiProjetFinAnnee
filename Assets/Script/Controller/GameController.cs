@@ -23,6 +23,10 @@ public class GameController : MonoBehaviour
     [SerializeField] HeartView heart2;
     [SerializeField] HeartView heart3;
 
+    [SerializeField] SpriteRenderer arcSpriteRenderer;
+    [SerializeField] Sprite arcSprite2;
+    [SerializeField] Sprite arcSprite3;
+
 
     [SerializeField] PauseController pauseGame;
 
@@ -52,20 +56,9 @@ public class GameController : MonoBehaviour
 
         nbShootBoost = 1;
 
-        if(nbBullet == 1)
-        {
-            characterProjectileSpawner.SetShoot(true);
-        }else if (nbBullet == 2)
-        {
-            characterProjectileSpawner2.SetShoot(true);
-            characterProjectileSpawner3.SetShoot(true);
-        }
-        else 
-        {
-            characterProjectileSpawner.SetShoot(true);
-            characterProjectileSpawner2.SetShoot(true);
-            characterProjectileSpawner3.SetShoot(true);
-        }
+        nbBullet = 1;
+        characterProjectileSpawner.SetShoot(true);
+        
 
     }
 
@@ -126,7 +119,7 @@ public class GameController : MonoBehaviour
 
             character.SetShotBoost(false);
 
-            if(nbShootBoost%3 == 0)
+            if(nbShootBoost%2 == 0)
             {
                 characterProjectileSpawner.SetShoot(false);
                 characterProjectileSpawner2.SetShoot(true);
@@ -134,6 +127,8 @@ public class GameController : MonoBehaviour
 
                 nbBullet++;
                 nbShootBoost++;
+
+                arcSpriteRenderer.sprite = arcSprite2;
             }
             else
             {
@@ -148,7 +143,7 @@ public class GameController : MonoBehaviour
         {
             character.SetShotBoost(false);
 
-            if (nbShootBoost % 3 == 0)
+            if (nbShootBoost % 2 == 0)
             {
                 characterProjectileSpawner.SetShoot(true);
                 characterProjectileSpawner2.SetShoot(true);
@@ -156,6 +151,8 @@ public class GameController : MonoBehaviour
                 nbShootBoost++;
 
                 nbBullet++;
+
+                arcSpriteRenderer.sprite = arcSprite3;
             }
             else
             {
@@ -176,8 +173,6 @@ public class GameController : MonoBehaviour
 
 
         }
-
-
 
     }
 
