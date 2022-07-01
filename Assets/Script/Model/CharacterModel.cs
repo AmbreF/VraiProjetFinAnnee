@@ -9,6 +9,7 @@ public class CharacterModel : MonoBehaviour
     [SerializeField] private int _life;
     [SerializeField] private Animator _animator;
 
+    [SerializeField] CameraShake _cameraShake;
 
     private int _lifeMax;
     private float _lastHit;
@@ -113,11 +114,10 @@ public class CharacterModel : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Boost");
 
-            Debug.Log("Shoot");
 
             _boostShoot = true;
         }
-        else if (other.tag == "Ennemies" || other.tag == "Wolfes")
+        else if (other.tag == "Ennemies" || other.tag == "Wolves")
         {
             FindObjectOfType<AudioManager>().Play("Blessure");
 
@@ -126,6 +126,8 @@ public class CharacterModel : MonoBehaviour
                 _life--;
 
                 _lastHit = 3f;
+
+                StartCoroutine(_cameraShake.Shake(0.5f,0.1f));
 
             }
         }

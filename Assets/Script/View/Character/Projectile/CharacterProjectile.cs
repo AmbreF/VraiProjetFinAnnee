@@ -51,7 +51,7 @@ public class CharacterProjectile : MonoBehaviour,IPooledProjectile
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == "Ennemies" || other.tag == "Wolfes")
+        if (other.tag == "Ennemies" || other.tag == "Wolves")
         {
             FindObjectOfType<AudioManager>().Play("Hit");
         }

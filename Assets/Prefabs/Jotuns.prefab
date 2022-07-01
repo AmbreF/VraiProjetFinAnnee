@@ -52,7 +52,6 @@ MonoBehaviour:
   travelMode: 0
   speed: 2
   m_normalizedT: 0
-  _walker: {fileID: 2595958034162558966}
   rotationLerpModifier: 10
   lookAt: 0
   onPathCompleted:

@@ -62,7 +62,7 @@ public class LifeModel : MonoBehaviour
 
         
 
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.3f);
 
         Destroy(_thisCharacter);
 

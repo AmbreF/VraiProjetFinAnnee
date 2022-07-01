@@ -15,7 +15,6 @@ namespace BezierSolution
 		[Range( 0f, 1f )]
 		private float m_normalizedT = 0f;
 
-		[SerializeField] private GameObject _walker;
 
 		public override BezierSpline Spline { get { return spline; } }
 
@@ -49,6 +48,10 @@ namespace BezierSolution
 			Vector3 targetPos = spline.MoveAlongSpline( ref m_normalizedT, targetSpeed * deltaTime );
 
 			transform.position = targetPos;
+
+			
+
+
 			//transform.position = Vector3.Lerp( transform.position, targetPos, movementLerpModifier * deltaTime );
 
 			bool movingForward = MovingForward;

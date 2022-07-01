@@ -7,6 +7,7 @@ public class EnnemiesProjectileSpawner : MonoBehaviour
     private float _lastShoot;
     [SerializeField] GameObject _projectile;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,7 @@ public class EnnemiesProjectileSpawner : MonoBehaviour
         if (_lastShoot <= 0)
         {
             Instantiate(_projectile, transform.position, Quaternion.identity);
-            _lastShoot = 1f;
+            _lastShoot = 2f;
         }
     }
 

@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6390773106940604504}
   - component: {fileID: -1071535018230555049}
   - component: {fileID: 9146080118377885962}
+  - component: {fileID: -2774684677723894199}
   m_Layer: 0
   m_Name: Skoll
   m_TagString: Wolves
@@ -124,7 +125,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3fdbc70f295604aaeb166734d7eca2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _life: 500
+  _life: 550
   _thisCharacter: {fileID: 2390996972109107715}
   _animator: {fileID: -1071535018230555049}
 --- !u!95 &-1071535018230555049
@@ -242,3 +243,25 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-2774684677723894199
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2390996972109107715}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 148310ac13c958d4c93f53cdfe985375, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spline: {fileID: 0}
+  travelMode: 0
+  speed: 4.5
+  m_normalizedT: 0
+  _walker: {fileID: 0}
+  rotationLerpModifier: 10
+  lookAt: 1
+  onPathCompleted:
+    m_PersistentCalls:
+      m_Calls: []

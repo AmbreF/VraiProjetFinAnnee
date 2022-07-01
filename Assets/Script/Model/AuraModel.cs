@@ -6,7 +6,8 @@ public class AuraModel : MonoBehaviour
 {
     [SerializeField] private float _auraRange;
     [SerializeField] private LayerMask _ennemyLayers;
-    [SerializeField] private SpriteRenderer _sprite;
+    [SerializeField] private GameObject _boost;
+    [SerializeField] private SpriteRenderer _auraView;
 
 
     private bool _haveBoost;
@@ -21,10 +22,9 @@ public class AuraModel : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(_haveBoost)
-        {
-            _sprite.enabled = true;
-        }
+        
+        _boost.SetActive(_haveBoost);
+        
 
     }
 
@@ -40,20 +40,23 @@ public class AuraModel : MonoBehaviour
 
             Collider2D[] hitEnnemies = Physics2D.OverlapCircleAll(transform.position, _auraRange, _ennemyLayers);
 
+            _auraView.enabled = true;
+
             foreach (Collider2D ennemy in hitEnnemies)
             {
 
                 //ennemy = hitCollider.GetComponent<LifeModel>();
 
-                ennemy.GetComponent<LifeModel>().SetLife(ennemy.GetComponent<LifeModel>().GetLife() - 5);
+                ennemy.GetComponent<LifeModel>().SetLife(ennemy.GetComponent<LifeModel>().GetLife() - 10);
 
                 //Debug.Log("Hit : "+ ennemy.name);
 
             }
 
 
-            _sprite.enabled = false;
             _haveBoost = false;
+
+            StartCoroutine(UseAura());
 
         }
     }
@@ -62,5 +65,14 @@ public class AuraModel : MonoBehaviour
     {
         _haveBoost = boost;
     }
+
+    public IEnumerator UseAura()
+    {
+        
+        yield return new WaitForSeconds(0.5f);
+
+        _auraView.enabled = false;
+    }
+
 
 }

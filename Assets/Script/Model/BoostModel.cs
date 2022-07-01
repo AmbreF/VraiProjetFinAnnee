@@ -20,7 +20,6 @@ public class BoostModel : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("ouais");
 
         if (other.tag == "Player")
         {
